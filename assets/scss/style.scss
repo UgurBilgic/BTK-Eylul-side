@@ -2,10 +2,18 @@
     --bg-one: #1F4B43;
     --bg-two: #E7C873;
     --bg-three: #EB664E;
+    --bg-blue: #254EF0;
 }
 
 img {
     max-width: 100%;
+}
+
+.navbar {
+    border-radius: 16px;
+    @media (min-width: 992px) { 
+        border-radius: 24px;
+    }
 }
 
 .hero-slider {
@@ -14,6 +22,14 @@ img {
     align-items: center;
     justify-content: center;
     font-size: small;
+    &-image {
+        height: 200px;
+        object-fit: cover;
+        min-height: 100dvh;
+        @media (min-width:  1200px) { 
+            height: 100%;
+        }
+    }
     &-content {
         bottom: 70px;
         position: absolute;
@@ -100,6 +116,7 @@ img {
                     display: flex;
                     align-items: center;
                     justify-content: center;
+                    flex-shrink: 0;
                 }
             }
         }
@@ -238,6 +255,7 @@ img {
                 border-radius: var(--card-radius);
                 bottom: 0;
                 transform: translateY(50%);
+                
                 &-text {
                     display: flex;
                     flex-direction: column;
@@ -317,6 +335,12 @@ img {
     background-color: #FFF8F6;
     &-card-one {
         &-image {
+            border-radius: 16px;
+            overflow: hidden;
+            &:hover img {
+                transform: scale(1.1);
+                transition: all 300ms;
+            }
             img {
                 object-fit: cover;
             }
@@ -325,14 +349,20 @@ img {
             background-color: var(--bg-two);
             max-width: 209px;
             height: 182px;
-            justify-content:flex-end;     
+            justify-content:flex-end;   
+            margin-bottom: 100px; 
             &-icon {
-                .icon-home {
-                    background-image: url(../img/icon/home-white.svg);
-                    background-color: var(--bg-one);
-                    width: 20px;
-                    height: 20px;
-                }
+                background-color: var(--bg-one);
+                display: flex;
+                border-radius: 50%;
+                width: 60px;
+                height: 60px;
+                align-items: center;
+                justify-content: center;
+                margin-left: 25px;
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
             }
         }
     }
@@ -340,7 +370,19 @@ img {
         display:flex;
         right: 0;
         bottom: 0;
-        
+        &-image {
+            margin-top: 120px;
+            overflow: hidden;
+            border-radius: 16px;
+            &:hover img {
+                transition: all 300ms;
+                transform: scale(1.1);
+            }
+            img {
+                height: 100%;
+                align-items: flex-end; 
+            }
+        }
     }
     &-content {
         &-list {
@@ -359,12 +401,16 @@ img {
                     content: '';
                     position: absolute;
                     background-image: url(../img/icon/confirm.svg);
+                    background-color: #ffffff;
                     background-repeat: no-repeat;
+                    background-position: center;
                     width: 20px;
                     height: 20px;
-                    left: 0;
-                    top: 35%;
+                    border-radius: 50%;
+                    left: -10px;
+                    padding: 15px;
                 }
+                
             }
         }
         &-button {
@@ -375,5 +421,37 @@ img {
             color: white;
             cursor: pointer;
         }
+    }
+}
+
+.discover-place {
+    background-image: url(../img/discover-place/place-1.jpg);
+    background-attachment:fixed ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    display: flex;
+    &-content {
+        color: #000000;
+        &-button {
+            background-color: var(--bg-blue);
+            border-radius: 10px;
+            color: #ffffff;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+    }
+    &::after {
+        content: '';
+        background-color: rgba(0, 0, 0, 0.3);
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    &:hover::after {
+        background-color: rgba(0, 0, 0, 0.4);
     }
 }
