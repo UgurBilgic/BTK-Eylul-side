@@ -3,16 +3,105 @@
     --bg-two: #E7C873;
     --bg-three: #EB664E;
     --bg-blue: #254EF0;
+    --bg-one-hover: #286157;
+    --bg-two-hover: #e7c873;
+    --bg-blue-hover: #365cf5;
 }
 
 img {
     max-width: 100%;
 }
 
+.icon {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    &-social {
+        width: 20px;
+        height: 20px;
+        &-facebook {
+            background-image: url(../img/icon/facebook.svg);
+        }
+        &-x {
+            background-image: url(../img/icon/x.svg);
+        }
+        &-instagram {
+            background-image: url(../img/icon/instagram.svg);
+        }
+        &-linkedin {
+            background-image: url(../img/icon/linkedin.svg);
+        }
+    }
+    &-dark {
+        filter: invert(0%) sepia(0) saturate(0%) hue-rotate(0) brightness(0) contrast(100%);
+    }
+    &-check {
+        background-image: url("../img/icon/confirm.svg");
+        width: 20px;
+        height: 20px;
+    }
+    &-arrow-right {
+        background-image: url("../img/icon/arrow-right.svg");
+        width: 20px;
+        height: 20px;
+    }
+    &-location {
+        background-image: url(../img/icon/location.svg);
+    }
+    &-bed {
+        background-image: url(../img/icon/bed.svg);
+    }
+    &-bath {
+        background-image: url(../img/icon/bath.svg);
+    }
+    &-square {
+        background-image: url(../img/icon/square-meter.svg);
+    }
+    &-favorite {
+        background-image: url(../img/icon/favorite.svg);
+    }
+}
+
 .navbar {
     border-radius: 16px;
     @media (min-width: 992px) { 
         border-radius: 24px;
+    }
+}
+
+.btn-main {
+    outline: none;
+    border: none;
+    padding: 6px 12px;
+    text-transform: uppercase;
+    border-radius: 12px;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    transition: all 250ms;
+    &-one {
+        background-color: var(--bg-one);
+        &:hover {
+            background-color: var(--bg-one-hover);
+        }
+    }
+    &-two {
+        background-color: var(--bg-two);
+        color: #000000;
+        &:hover {
+            background-color: var(--bg-two-hover);
+        }
+    }
+    &-blue {
+        background-color: var(--bg-blue);
+        &:hover {
+            background-color: var(--bg-blue-hover);
+        }
     }
 }
 
@@ -23,7 +112,6 @@ img {
     justify-content: center;
     font-size: small;
     &-image {
-        height: 200px;
         object-fit: cover;
         min-height: 100dvh;
         @media (min-width:  1200px) { 
@@ -31,7 +119,6 @@ img {
         }
     }
     &-content {
-        bottom: 70px;
         position: absolute;
         display: flex;
         flex-direction: column;
@@ -256,6 +343,8 @@ img {
                 bottom: 0;
                 transform: translateY(50%);
                 
+                
+                
                 &-text {
                     display: flex;
                     flex-direction: column;
@@ -331,95 +420,58 @@ img {
     }
 }
 
-.work-with-us {
-    background-color: #FFF8F6;
-    &-card-one {
-        &-image {
-            border-radius: 16px;
-            overflow: hidden;
-            &:hover img {
-                transform: scale(1.1);
-                transition: all 300ms;
-            }
-            img {
-                object-fit: cover;
-            }
+.should-work {
+    background-color: #fff8f6;
+    &-image {
+        border-radius: 16px;
+        overflow: hidden;
+        &:hover img {
+            transform: scale(1.1);
         }
-        &-properties {
+        &-one {
+            margin-bottom: 24px;
+        }
+        &-two {
+            margin-top: 120px;
+        }
+        img {
+            width: 100%;
+            height: 100%;
+            transition: all 250ms;
+        }
+
+        &-content {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
             background-color: var(--bg-two);
-            max-width: 209px;
-            height: 182px;
-            justify-content:flex-end;   
-            margin-bottom: 100px; 
+            border-radius: 16px;
+            padding: 24px;
+            margin-left: 100px;
             &-icon {
                 background-color: var(--bg-one);
                 display: flex;
-                border-radius: 50%;
-                width: 60px;
-                height: 60px;
                 align-items: center;
                 justify-content: center;
-                margin-left: 25px;
-                background-repeat: no-repeat;
-                background-position: center;
-                background-size: cover;
-            }
-        }
-    }
-    &-card-two {
-        display:flex;
-        right: 0;
-        bottom: 0;
-        &-image {
-            margin-top: 120px;
-            overflow: hidden;
-            border-radius: 16px;
-            &:hover img {
-                transition: all 300ms;
-                transform: scale(1.1);
-            }
-            img {
-                height: 100%;
-                align-items: flex-end; 
+                width: 60px;
+                height: 60px;
+                border-radius: 50%;
             }
         }
     }
     &-content {
-        &-list {
+        &-icon {
+            background-color: #ffffff;
             display: flex;
-            gap: 100px;
-            ul {
-                padding: 0;
-                margin-left: 10px;
-                list-style-type: none;
-                }
-            li {
-                margin-bottom: 15px;
-                position: relative;
-                padding-left: 35px;
-                &::before {
-                    content: '';
-                    position: absolute;
-                    background-image: url(../img/icon/confirm.svg);
-                    background-color: #ffffff;
-                    background-repeat: no-repeat;
-                    background-position: center;
-                    width: 20px;
-                    height: 20px;
-                    border-radius: 50%;
-                    left: -10px;
-                    padding: 15px;
-                }
-                
+            border-radius: 50%;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            .icon-check {
+                width: 15px;
+                height: 15px;
             }
-        }
-        &-button {
-            background-color: var(--bg-one);
-            display: inline-block;
-            padding: 10px 20px;
-            border-radius: 12px;
-            color: white;
-            cursor: pointer;
         }
     }
 }
@@ -453,5 +505,92 @@ img {
     }
     &:hover::after {
         background-color: rgba(0, 0, 0, 0.4);
+    }
+}
+
+.these-cities {
+    &-image {
+        &-big , &-small {
+            display: flex;
+            position: relative;
+            width: 100%;
+            &-content {
+                position: absolute;
+                background-color: rgba(255, 255, 255, 0.3);
+                backdrop-filter: blur(15px);
+                color: #ffffff;
+                bottom: 5%;
+                left: 5%;
+                right: 5%;
+                padding: 8px;
+                padding-left: 30px;
+                width: calc(100% - 10%);
+                border-radius: 16px;
+            }
+            img {
+                border-radius: 12px;
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+}
+
+footer {
+    background-color:#F9F9F9;
+}
+
+.real-estate {
+    background-image: url(../img/liste-header/liste-1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.renk {
+    color: var(--bg-two);
+}
+
+.property-card {
+    border: 0.1px solid black;
+    border-radius: 16px;
+    &-image {
+        position: relative;
+        img {
+            border-radius: 16px 16px 0 0;
+        }
+        &-tag {
+            position: absolute;
+            gap: 10px;
+            display: flex;
+            padding: 10px;
+        }
+    }
+    &-content {
+        &-top {
+            &-icons {
+                &-one , &-two , &-three {
+                    border: 0.3px solid black;
+                    padding: 3px 10px;
+                    border-radius: 20px;
+                }
+            }
+        }
+        &-bottom {
+            span , small {
+                color: var(--bg-three);
+                display: flex;
+                justify-content: flex-end;
+            }
+            &-favorite {
+                border: 1px solid #E9E9E9;
+                border-radius: 50%;
+                width: 40px;
+                height: 40px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
     }
 }
