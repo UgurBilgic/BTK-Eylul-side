@@ -58,8 +58,11 @@
                 <span class="fs-6 fw-lighter" >Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
             </div>
             <div class="row">
-                <div class="col-2 my-4">
-                    <div class="property-filter">
+                <div class="col-12 my-3 d-lg-none">
+                    <button class="btn btn-main-one text-white" onclick="propertyFilterDrawer.classList.toggle('active')">Filtre</button>
+                </div>
+                <div id="propertyFilterDrawer" class="col-lg-3 my-4 propert-filter-wrapper">
+                    <div class="property-filter mb-3">
                         <div class="property-filter-content">
                             <div class="property-filter-content-title">
                                 Kategoriler
@@ -107,11 +110,14 @@
                                   </select>
                             </div>
                         </div>
+                        <div class="property-filter-content-close">
+                            <button class="btn btn-main-two text-white d-lg-none" onclick="propertyFilterDrawer.classList.toggle('active')">Filtre Kapat</button>
+                        </div>
                     </div>
                 </div>
-                <div class="col-10">
+                <div class=" col-12 col-lg-9">
                     <div class="row">
-                        <div class="col-4 my-4">
+                        <div class="col-12 col-lg-4 my-4">
                             <div class="property-card">
                                 <div class="property-card-image">
                                     <div class="property-card-image-tag">
@@ -156,7 +162,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-4 my-4">
+                        <div class="col-12 col-lg-4 my-4">
                             <div class="property-card">
                                 <div class="property-card-image">
                                     <div class="property-card-image-tag">
@@ -201,7 +207,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-4 my-4">
+                        <div class="col-12 col-lg-4 my-4">
                             <div class="property-card">
                                 <div class="property-card-image">
                                     <div class="property-card-image-tag">
@@ -246,7 +252,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-4 my-4">
+                        <div class="col-12 col-lg-4 my-4">
                             <div class="property-card">
                                 <div class="property-card-image">
                                     <div class="property-card-image-tag">
@@ -290,7 +296,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-4 my-4">
+                        <div class="col-12 col-lg-4 my-4">
                             <div class="property-card">
                                 <div class="property-card-image">
                                     <div class="property-card-image-tag">
@@ -334,7 +340,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-4 my-4">
+                        <div class="col-12 col-lg-4 my-4">
                             <div class="property-card">
                                 <div class="property-card-image">
                                     <div class="property-card-image-tag">
@@ -378,7 +384,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-4 my-4">
+                        <div class="col-12 col-lg-4 my-4">
                             <div class="property-card">
                                 <div class="property-card-image">
                                     <div class="property-card-image-tag">
@@ -422,7 +428,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-4 my-4">
+                        <div class="col-12 col-lg-4 my-4">
                             <div class="property-card">
                                 <div class="property-card-image">
                                     <div class="property-card-image-tag">
@@ -466,7 +472,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-4 my-4">
+                        <div class="col-12 col-lg-4 my-4">
                             <div class="property-card">
                                 <div class="property-card-image">
                                     <div class="property-card-image-tag">
@@ -510,7 +516,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-4 my-4">
+                        <div class="col-12 col-lg-4 my-4">
                             <div class="property-card">
                                 <div class="property-card-image">
                                     <div class="property-card-image-tag">
@@ -554,7 +560,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-4 my-4">
+                        <div class="col-12 col-lg-4 my-4">
                             <div class="property-card">
                                 <div class="property-card-image">
                                     <div class="property-card-image-tag">
@@ -598,7 +604,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-4 my-4">
+                        <div class="col-12 col-lg-4 my-4">
                             <div class="property-card">
                                 <div class="property-card-image">
                                     <div class="property-card-image-tag">
@@ -648,7 +654,7 @@
         </div>
     </section>
     
-    
+
 
 
     <footer>
