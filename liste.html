@@ -30,7 +30,7 @@
                     <a class="nav-link" href="#liste">Liste</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Pricing</a>
+                    <a class="nav-link" href="kategori.html">Kategori</a>
                   </li>
                 </ul>
                 <span class="navbar-text">
@@ -61,58 +61,59 @@
                 <div class="col-12 my-3 d-lg-none">
                     <button class="btn btn-main-one text-white" onclick="propertyFilterDrawer.classList.toggle('active')">Filtre</button>
                 </div>
-                <div id="propertyFilterDrawer" class="col-lg-3 my-4 propert-filter-wrapper">
-                    <div class="property-filter mb-3">
-                        <div class="property-filter-content">
-                            <div class="property-filter-content-title">
-                                Kategoriler
+                <div class="col-lg-3">
+                    <div id="propertyFilterDrawer" class="property-filter-wrapper">
+                        <div class="property-filter mb-3">
+                            <div class="property-filter-content">
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <div class="property-filter-content-title">
+                                        Kategoriler
+                                    </div>
+                                    <button class="d-flex d-lg-none btn btn-main-one text-white" onclick="propertyFilterDrawer.classList.toggle('active')">Kapat</button>
+                                </div>
+                                <div class="property-filter-content-elements">
+                                    <a href="#" class="filter-link">Kiralık</a>
+                                    <a href="#" class="filter-link">Satılık</a>
+                                    <a href="#" class="filter-link">Yazlık</a>
+                                    <a href="#" class="filter-link">Devren Kiralık</a>
+                                    <a href="#" class="filter-link">Villa</a>
+                                    <a href="#" class="filter-link">Yalı</a>
+                                </div>
                             </div>
-                            <div class="property-filter-content-elements">
-                                <div class="filter-link">
-                                    <a href="#">Kiralik</a>
-                                    <a href="#">Satılık</a>
-                                    <a href="#">Yazlık</a>
-                                    <a href="#">Devren Kiralık</a>
-                                    <a href="#">Villa</a>
-                                    <a href="#">Yalı</a>
+                            <div class="property-filter-content">
+                                <div class="property-filter-content-title">
+                                    İlan Tipi
+                                </div>
+                                <div class="property-filter-content-elements">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="propertyType" id="kiralik">
+                                        <label class="form-check-label" for="kiralik">
+                                            Kiralık
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="propertyType" id="satilik">
+                                        <label class="form-check-label" for="satilik">
+                                            Satılık
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="property-filter-content">
+                                <div class="property-filter-content-title">
+                                    Danışman Seçimi
+                                </div>
+                                <div class="property-filter-content-elements">
+                                    <select class="form-select">
+                                        <option disabled hidden selected>Danışman Seçiniz</option>
+                                        <option value="1">Özlem</option>
+                                        <option value="2">Sıla</option>
+                                        <option value="3">Ayşe</option>
+                                    </select>
                                 </div>
                             </div>
                         </div>
-                        <div class="property-filter-content">
-                            <div class="property-filter-content-title">
-                                İlan Tipi
-                            </div>
-                            <div class="property-filter-content-elements">
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" id="flexCheckDefault">
-                                    <label class="form-check-label d-block" for="flexCheckDefault">
-                                      Kiralık
-                                    </label>
-                                  </div>
-                                  <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" id="flexCheckChecked" checked>
-                                    <label class="form-check-label d-block" for="flexCheckChecked">
-                                      Satılık
-                                    </label>
-                                  </div>
-                            </div>
-                        </div>
-                        <div class="property-filter-content">
-                            <div class="property-filter-content-title mb-2">
-                                Danışman Seçimi
-                            </div>
-                            <div class="property-filter-content-elements">
-                                <select class="form-select" aria-label="Default select example">
-                                    <option hidden selected>Danışman seç</option>
-                                    <option value="1">UGUR</option>
-                                    <option value="2">Ahmet</option>
-                                    <option value="3">Mehmet</option>
-                                  </select>
-                            </div>
-                        </div>
-                        <div class="property-filter-content-close">
-                            <button class="btn btn-main-two text-white d-lg-none" onclick="propertyFilterDrawer.classList.toggle('active')">Filtre Kapat</button>
-                        </div>
+                        <div class="property-filter-overlay" onclick="propertyFilterDrawer.classList.toggle('active')"></div>
                     </div>
                 </div>
                 <div class=" col-12 col-lg-9">
@@ -653,8 +654,34 @@
             </div>
         </div>
     </section>
-    
 
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="category-card d-flex">
+                    <div class="col-8">
+                        
+                    </div>
+                    <div class="col-4">
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="category-card-image-one">
+                                    <img src="assets/img/category-header/category-3.jpg" alt="home">
+                                    <img src="assets/img/category-header/category-4.jpg" alt="home-2">
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="category-card-image-two">
+                                    <img src="assets/img/category-header/category-2.jpg" alt="hom-3">
+                                    <img src="assets/img/category-header/category-1.jpg" alt="home-4">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
     <footer>
