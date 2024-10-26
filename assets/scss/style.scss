@@ -74,6 +74,12 @@ section {
     &-favorite {
         background-image: url(../img/icon/favorite.svg);
     }
+    &-phone {
+        background-image: url(../img/icon/phone.svg);
+    }
+    &-user {
+        background-image: url(../img/icon/user.svg);
+    }
 }
 
 .navbar {
@@ -172,7 +178,7 @@ section {
             button {
                 position: absolute;
                 right: 5px;
-                top: 5px;
+                top: 3px;
                 width: 44px;
                 height: 44px;
                 outline: none;
@@ -781,17 +787,20 @@ footer {
             }
         }
     }
+    &-populer {
+        cursor: pointer;
+    }
 }
 
 .find-properties {
     border: 1px solid #E9E9E9;
-    padding: 10px;
+    padding: 7px;
     border-radius: 16px;
     gap: 12px;
     &-image {
         img {
-            width: 50px;
-            height: 50px;
+            width: 55px;
+            height: 55px;
             border-radius: 12px;
         }
     }

@@ -30,22 +30,27 @@
                     <a class="nav-link" href="liste.html">Liste</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="kategori.html">Kategori</a>
+                    <a class="nav-link" href="#kategori">Kategori</a>
                   </li>
                 </ul>
-                <span class="navbar-text">
-                  Navbar text with an inline element
+                <span class="navbar-widget d-flex gap-3">
+                  <a href="tel:+905055555555" class="d-flex gap-1 text-decoration-none align-items-center text-black ">
+                    <i class="icon icon-phone"></i>
+                    <span>+90505 555 55 55</span>
+                  </a>
+                  <a href="#" class="rounded-circle d-flex align-items-center justify-content-center px-2 border border-black">
+                    <i class="icon icon-user "></i>
+                  </a>
+                  <a href="#" class="rounded-pill d-flex px-4 border border-black text-decoration-none p-2 text-black">
+                    <span class="fw-medium">Add Property</span>
+                  </a>
                 </span>
               </div>
             </div>
           </nav>
     </header>
-    
-    <section class="my-5">
-        <div class="text-white">asdasd</div>
-    </section>
 
-    <section class="my-5">
+    <section class="my-5 py-5">
         <div class="container">
             <div class="row">
                 <div class="category-card d-flex">
@@ -138,7 +143,7 @@
         </div>
     </section>
 
-    <section>
+    <section  id="kategori" >
       <div class="container">
         <div class="d-block">
           <span class="fw-bold fs-1">Find Properties in These Cities</span>
@@ -154,9 +159,9 @@
                 <div class="find-properties-image d-flex">
                   <img src="assets/img/find-product/find-1.jpg" alt="city-1">
                 </div>
-                <div class="d-flex flex-column align-items-center justify-content-center">
-                  <strong>New York</strong>
-                  <small>8 Properties</small>
+                <div class="d-flex flex-column justify-content-center">
+                  <strong>San Diego</strong>
+                  <small>0 Properties</small>
                 </div>
               </div>
             </div>
@@ -165,9 +170,9 @@
                 <div class="find-properties-image d-flex">
                   <img src="assets/img/find-product/find-4.jpg" alt="city-1">
                 </div>
-                <div class="d-flex flex-column align-items-center justify-content-center">
-                  <strong>New York</strong>
-                  <small>8 Properties</small>
+                <div class="d-flex flex-column justify-content-center">
+                  <strong>Miami</strong>
+                  <small>2 Properties</small>
                 </div>
               </div>
             </div>
@@ -176,9 +181,9 @@
                 <div class="find-properties-image d-flex">
                   <img src="assets/img/find-product/find-1.jpg" alt="city-1">
                 </div>
-                <div class="d-flex flex-column align-items-center justify-content-center">
-                  <strong>New York</strong>
-                  <small>8 Properties</small>
+                <div class="d-flex flex-column justify-content-center">
+                  <strong>Los Angales</strong>
+                  <small>1 Properties</small>
                 </div>
               </div>
             </div>
@@ -187,9 +192,9 @@
                 <div class="find-properties-image d-flex">
                   <img src="assets/img/find-product/find-2.jpg" alt="city-1">
                 </div>
-                <div class="d-flex flex-column align-items-center justify-content-center">
-                  <strong>New York</strong>
-                  <small>8 Properties</small>
+                <div class="d-flex flex-column justify-content-center">
+                  <strong>Chicago</strong>
+                  <small>2 Properties</small>
                 </div>
               </div>
             </div>
@@ -198,7 +203,7 @@
                 <div class="find-properties-image d-flex">
                   <img src="assets/img/find-product/find-1.jpg" alt="city-1">
                 </div>
-                <div class="d-flex flex-column align-items-center justify-content-center">
+                <div class="d-flex flex-column justify-content-center">
                   <strong>New York</strong>
                   <small>8 Properties</small>
                 </div>
@@ -209,13 +214,36 @@
                 <div class="find-properties-image d-flex">
                   <img src="assets/img/find-product/find-3.jpg" alt="city-1">
                 </div>
-                <div class="d-flex flex-column align-items-center justify-content-center">
+                <div class="d-flex flex-column justify-content-center">
+                  <strong>New York</strong>
+                  <small>8 Properties</small>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="find-properties d-flex">
+                <div class="find-properties-image d-flex">
+                  <img src="assets/img/find-product/find-4.jpg" alt="city-1">
+                </div>
+                <div class="d-flex flex-column justify-content-center">
+                  <strong>New York</strong>
+                  <small>8 Properties</small>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="find-properties d-flex">
+                <div class="find-properties-image d-flex">
+                  <img src="assets/img/find-product/find-1.jpg" alt="city-1">
+                </div>
+                <div class="d-flex flex-column justify-content-center">
                   <strong>New York</strong>
                   <small>8 Properties</small>
                 </div>
               </div>
             </div>
           </div>
+          <div class="swiper-pagination"></div>
         </div>
       </div>
       <script>
@@ -242,6 +270,233 @@
           },
         });
       </script>
+    </section>
+
+    <section class="pb-5">
+      <div class="container">
+        <div class="row pt-5">
+          <div class="d-flex flex-column justify-content-center align-items-center pb-5">
+            <span class="fw-semibold fs-1" >Featured Properties</span>
+            <span class=" fw-lighter" >Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-4 mb-4">
+            <div class="product-card">
+              <div class="product-card-first-button fw-semibold">
+                <span>FOR SALE</span>
+              </div>
+              <div class="product-card-second-button fw-semibold">
+                <span>FEATURED</span>
+              </div>
+              <div class="product-card-content">
+                <div class="product-card-content-text">
+                  <span class="fw-semibold fs-5">Luxury Family Home</span>
+                </div>
+                <div class="product-card-content-location">
+                  <img src="assets/img/icon/icon-1.svg" alt="icon-1">
+                  <span>1800-1818 79th St</span>
+                </div>
+                <div class="product-card-content-bottom d-flex">
+                  <div class="product-card-content-bottom-price fw-semibold">
+                    <span>$395,000</span>
+                  </div>
+                  <div class="product-card-content-bottom-desc">
+                    <div class="d-flex gap-2">
+                      <img src="assets/img/icon/bed.svg" alt="bed">
+                      <span class="border-end pe-2">4</span>
+                      <img src="assets/img/icon/bath.svg" alt="bed">
+                      <span class="border-end pe-2">1</span>
+                      <img src="assets/img/icon/square-meter.svg" alt="bed">
+                      <span class="pe-2">400</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="product-card-image">
+                <img src="assets/img/lazy-load/loading.svg" data-src="assets/img/product-card/product-1.jpg" class="lazyload" alt="product-1">
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-4 mb-4">
+            <div class="product-card">
+              <div class="product-card-first-button fw-semibold">
+                <span>FOR SALE</span>
+              </div>
+              <div class="product-card-content">
+                <div class="product-card-content-text">
+                  <span class="fw-semibold fs-5">Skyper Pool Apartment</span>
+                </div>
+                <div class="product-card-content-location">
+                  <img src="assets/img/icon/icon-1.svg" alt="icon-1">
+                  <span>1020 Bloomingdale Ave</span>
+                </div>
+                <div class="product-card-content-bottom d-flex">
+                  <div class="product-card-content-bottom-price fw-semibold">
+                    <span>$280,000</span>
+                  </div>
+                  <div class="product-card-content-bottom-desc">
+                    <div class="d-flex gap-2">
+                      <img src="assets/img/icon/bed.svg" alt="bed">
+                      <span class="border-end pe-2">4</span>
+                      <img src="assets/img/icon/bath.svg" alt="bed">
+                      <span class="border-end pe-2">2</span>
+                      <img src="assets/img/icon/square-meter.svg" alt="bed">
+                      <span class="pe-2">450</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="product-card-image">
+                <img src="assets/img/lazy-load/loading.svg" data-src="assets/img/product-card/product-2.jpg" class="lazyload" alt="product-1">
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-4 mb-4">
+            <div class="product-card">
+              <div class="product-card-first-button fw-semibold">
+                <span>FOR RENT</span>
+              </div>
+              <div class="product-card-content">
+                <div class="product-card-content-text">
+                  <span class="fw-semibold fs-5">North Dillard Street</span>
+                </div>
+                <div class="product-card-content-location">
+                  <img src="assets/img/icon/icon-1.svg" alt="icon-1">
+                  <span>4330 Bell Shoals Rd</span>
+                </div>
+                <div class="product-card-content-bottom d-flex">
+                  <div class="product-card-content-bottom-price fw-semibold">
+                    <span>$250/month</span>
+                  </div>
+                  <div class="product-card-content-bottom-desc">
+                    <div class="d-flex gap-2">
+                      <img src="assets/img/icon/bed.svg" alt="bed">
+                      <span class="border-end pe-2">4</span>
+                      <img src="assets/img/icon/bath.svg" alt="bed">
+                      <span class="border-end pe-2">2</span>
+                      <img src="assets/img/icon/square-meter.svg" alt="bed">
+                      <span class="pe-2">400</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="product-card-image">
+                <img src="assets/img/lazy-load/loading.svg" data-src="assets/img/product-card/product-3.jpg" class="lazyload" alt="product-1">
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-4 mb-4">
+            <div class="product-card">
+              <div class="product-card-first-button fw-semibold">
+                <span>FOR SALE</span>
+              </div>
+              <div class="product-card-second-button fw-semibold">
+                <span>FEATURED</span>
+              </div>
+              <div class="product-card-content">
+                <div class="product-card-content-text">
+                  <span class="fw-semibold fs-5">Luxury Family Home</span>
+                </div>
+                <div class="product-card-content-location">
+                  <img src="assets/img/icon/icon-1.svg" alt="icon-1">
+                  <span>1800-1818 79th St</span>
+                </div>
+                <div class="product-card-content-bottom d-flex">
+                  <div class="product-card-content-bottom-price fw-semibold">
+                    <span>$395,000</span>
+                  </div>
+                  <div class="product-card-content-bottom-desc">
+                    <div class="d-flex gap-2">
+                      <img src="assets/img/icon/bed.svg" alt="bed">
+                      <span class="border-end pe-2">4</span>
+                      <img src="assets/img/icon/bath.svg" alt="bed">
+                      <span class="border-end pe-2">1</span>
+                      <img src="assets/img/icon/square-meter.svg" alt="bed">
+                      <span class="pe-2">400</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="product-card-image">
+                <img src="assets/img/lazy-load/loading.svg" data-src="assets/img/product-card/product-4.jpg" class="lazyload" alt="product-4">
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-4 mb-4">
+            <div class="product-card">
+              <div class="product-card-first-button fw-semibold">
+                <span>FOR SALE</span>
+              </div>
+              <div class="product-card-second-button fw-semibold">
+                <span>FEATURED</span>
+              </div>
+              <div class="product-card-content">
+                <div class="product-card-content-text">
+                  <span class="fw-semibold fs-5">Luxury Family Home</span>
+                </div>
+                <div class="product-card-content-location">
+                  <img src="assets/img/icon/icon-1.svg" alt="icon-1">
+                  <span>1800-1818 79th St</span>
+                </div>
+                <div class="product-card-content-bottom d-flex">
+                  <div class="product-card-content-bottom-price fw-semibold">
+                    <span>$395,000</span>
+                  </div>
+                  <div class="product-card-content-bottom-desc">
+                    <div class="d-flex gap-2">
+                      <img src="assets/img/icon/bed.svg" alt="bed">
+                      <span class="border-end pe-2">4</span>
+                      <img src="assets/img/icon/bath.svg" alt="bed">
+                      <span class="border-end pe-2">1</span>
+                      <img src="assets/img/icon/square-meter.svg" alt="bed">
+                      <span class="pe-2">400</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="product-card-image">
+                <img src="assets/img/lazy-load/loading.svg" data-src="assets/img/product-card/product-5.jpg" class="lazyload" alt="product-5">
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-4 ">
+            <div class="product-card">
+              <div class="product-card-first-button fw-semibold">
+                <span>FOR SALE</span>
+              </div>
+              <div class="product-card-second-button fw-semibold">
+                <span>FEATURED</span>
+              </div>
+              <div class="product-card-content">
+                <div class="product-card-content-text">
+                  <span class="fw-semibold fs-5">Luxury Family Home</span>
+                </div>
+                <div class="product-card-content-location">
+                  <img src="assets/img/icon/icon-1.svg" alt="icon-1">
+                  <span>1800-1818 79th St</span>
+                </div>
+                <div class="product-card-content-bottom d-flex">
+                  <div class="product-card-content-bottom-price fw-semibold">
+                    <span>$395,000</span>
+                  </div>
+                  <div class="product-card-content-bottom-desc">
+                    <div class="d-flex gap-2">
+                      <img src="assets/img/icon/bed.svg" alt="bed">
+                      <span class="border-end pe-2">4</span>
+                      <img src="assets/img/icon/bath.svg" alt="bed">
+                      <span class="border-end pe-2">1</span>
+                      <img src="assets/img/icon/square-meter.svg" alt="bed">
+                      <span class="pe-2">400</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="product-card-image">
+                <img src="assets/img/lazy-load/loading.svg" data-src="assets/img/product-card/product-6.jpg" class="lazyload" alt="product-6">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <footer>
